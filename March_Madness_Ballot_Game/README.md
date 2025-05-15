@@ -1,4 +1,4 @@
-# March Madness Ballot Game: Different Analytic Approaches
+# March Madness Ballot Challenge: Different Analytic Approaches
 
 ## Introduction
 This notebook executes an evolutionary algorithm to find an optimal ballot for the March Madness ballot game developed by Dr James Stapleton (MSU Statistics Department). The game is a knapsack-type optimization problem: create a ballot of teams that maximizes wins while remaining within a specified budget (typically 100 points or imaginary dollars), with higher seeded teams being more expensive. Number 1 seeds typically cost 25, 2 seeds 19, 3 seeds 13, and so on down to the 15th and 16th seeds which cost 1. Additionally, win is weighted the same regardless of round (e.g., winning a game in the first round is just as much of a win as winning the Champsionship game). 
