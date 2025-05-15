@@ -1,5 +1,4 @@
-# Set Up
-"""
+"""# Set Up"""
 
 import numpy as np
 import matplotlib.pyplot as plt
