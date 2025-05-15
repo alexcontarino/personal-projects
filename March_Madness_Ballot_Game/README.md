@@ -121,7 +121,7 @@ After 100 iterations of the genetic algorithm, the best ballot obtained an estim
 1. The best performing ballots achieve around a 28% win probability. They typically have around 15 teams, with the majority of the budget spent on high-value seeds (seeds 3, 8, 10), and the remainder rounded out with as many low-cost teams as the player can still afford. 
 1. 1 and 2 seeds are not worth their respective price tags.
 1. While each algorithm identifies a top candidate, based on the results from the integer programming approach and the genetic algorithm, there are many ballots that provide similar win probability based on roughly equivalent combinations of seeds bought.
-1. Recognizing the year-to-year variance of seed quality within the tournament, and considering the above observations, a good rule of thumb for constructing a ballot is:
+1. Recognizing the year-to-year variance of seed quality within the tournament, and considering the above observations, the best recommendation out of all this could be to construct a rule of thumb for dividing the budget as follows:
 
   - Spend ~60% of the budget on seeds 3 - 8
   - Spend ~30% of the budget on seeds 9 - 12
