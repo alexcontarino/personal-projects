@@ -1,5 +1,5 @@
-# Set Up
-"""
+"""# Set Up"""
+
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -184,10 +184,7 @@ _, wins_by_seed = region_simulation(tournament_matchups, win_probs, np.random.de
 
 wins_by_seed
 
-"""# Step 3: Helper Functions
-
-
-"""
+"""# Step 3: Helper Functions"""
 
 def win_calculator(ballot, omega, rng):
 
