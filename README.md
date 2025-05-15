@@ -1,6 +1,6 @@
 Welcome! 
 
-In May 2025, I decided to start moving my personal projects onto GitHub. I suppose I am doing this for the same reasons most people do:
+In May 2025, I decided to start moving my personal projects onto GitHub, driven I suppose by the usual reasons:
 1) Actually finish projects that I start
 2) Force myself to comprehensible code
 3) Showcase the portfolio of things I have been working on for human consumption 
