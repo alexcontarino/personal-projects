@@ -125,9 +125,15 @@ After 100 iterations of the genetic algorithm, the best ballot obtained an estim
 1. While each algorithm identifies a top candidate, based on the results from the integer programming approach and the genetic algorithm, there are many ballots that provide similar win probability based on roughly equivalent combinations of seeds bought.
 1. Recognizing the year-to-year variance of seed quality within the tournament, and considering the above observations, the best recommendation out of all this could be to construct a rule of thumb for dividing the budget as follows:
 
-  - Spend ~60% of the budget on seeds 3 - 8
-  - Spend ~30% of the budget on seeds 9 - 12
-  - Spend the remainder on seeds 13 - 16.
+    - Spend ~60% of the budget on seeds 3 - 8
+    - Spend ~30% of the budget on seeds 9 - 12
+    - Spend the remainder on seeds 13 - 16.
+  
+### Next Steps
+
+1. Further refine the genetic algorithm with a more coherent stopping strategy.
+2. Use these findings to refine the search of candidates. Noting that seeds 1, 2, and 16 were not included in any of the higher performing candidates, the heuristics can avoid those regions of the search space for potential solutions.
+3. Refine how the assumptions made regarding seed-vs-seed win probabilities, which are discussed below. 
 
 ## A Note on Win Probabilities  
 
