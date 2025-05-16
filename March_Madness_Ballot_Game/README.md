@@ -90,15 +90,16 @@ Results coming soon.
 
 ### Simulated Annealing 
 
-After 100 iterations of the genetic algorithm, the best ballot obtained an estimated win probability of ____. The suggested ballot is as follows:
+After 1000 iterations of running the simulated algorithm, the best ballot obtained an estimated win probability of 0.2476 (2,500 trials). The suggested ballot is as follows:
 
-- 3 seeds: __ teams bought
-- 4 seed: __
-- 5 seed: __
-- 8 seed: __
-- 10 seed: __
-- 12 seed: __
-- 15 seed: __
+- 3 seeds: 3 teams bought
+- 4 seed: 1
+- 9 seed: 2
+- 10 seed: 3
+- 11 seed: 2
+- 12 seed: 4
+- 13 seed: 3
+- 15 seed: 1 
 
 Using the simulated annealing algorithm here does feel a bit like shooting in the dark: in a discrete space, the objective function is not smooth and it is difficult to identify which regions are promising. Additionally, limits of computation time (I tried to keep things less than 24 hours) meant each candidate having 2,000 tournament simulations at its disposal to estimate its win probability. With that probability appearing to be around 0.25, the margin of error on 2,000 trials is roughly 0.02, or 10%! 
 
@@ -106,19 +107,19 @@ These concerns were the main motivations for pursuing the genetic algorithm appr
 
 ### Genetic Algorithm
 
-After 100 iterations of the genetic algorithm, the best ballot obtained an estimated win probability of ____. The suggested ballot is as follows:
+After 100 iterations of the genetic algorithm, the best ballot obtained an estimated win probability of 0.2560 (10,000 trials). The suggested ballot is as follows:
 
-- 3 seeds: 3 teams bought
+- 3 seeds: 4 teams bought
 - 4 seed: 1
-- 5 seed: 2
-- 8 seed: 3
-- 10 seed: 1
-- 12 seed: 2
-- 15 seed: 2
+- 7 seed: 1
+- 8 seed: 2
+- 10 seed: 3
+- 13 seed: 1
+- 15 seed: 4
 
 ### Key Takeaways
 
-1. The best performing ballots achieve around a 28% win probability. They typically have around 15 teams, with the majority of the budget spent on high-value seeds (seeds 3, 8, 10), and the remainder rounded out with as many low-cost teams as the player can still afford. 
+1. The best performing ballots achieve around a 25% win probability. They typically have between 15 and 20 teams, with the majority of the budget spent on high-value seeds (seeds 3, 8, 10), and the remainder rounded out with as many low-cost teams as the player can still afford. 
 1. 1 and 2 seeds are not worth their respective price tags.
 1. While each algorithm identifies a top candidate, based on the results from the integer programming approach and the genetic algorithm, there are many ballots that provide similar win probability based on roughly equivalent combinations of seeds bought.
 1. Recognizing the year-to-year variance of seed quality within the tournament, and considering the above observations, the best recommendation out of all this could be to construct a rule of thumb for dividing the budget as follows:
