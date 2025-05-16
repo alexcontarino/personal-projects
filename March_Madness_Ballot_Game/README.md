@@ -1,7 +1,7 @@
 # March Madness Ballot Challenge: Different Analytic Approaches
 
 ## Introduction
-This notebook executes an evolutionary algorithm to find an optimal ballot for the March Madness ballot game developed by Dr James Stapleton (MSU Statistics Department). The game is a knapsack-type optimization problem: create a ballot of teams that maximizes wins while remaining within a specified budget (typically 100 points or imaginary dollars), with higher seeded teams being more expensive. Number 1 seeds typically cost 25, 2 seeds 19, 3 seeds 13, and so on down to the 15th and 16th seeds which cost 1. Additionally, win is weighted the same regardless of round (e.g., winning a game in the first round is just as much of a win as winning the Champsionship game). 
+This notebook executes an evolutionary algorithm to find an optimal ballot for the March Madness ballot game developed by Dr James Stapleton (MSU Statistics Department). The game is a knapsack-type optimization problem: create a ballot of teams that maximizes wins while remaining within a specified budget (typically 100 points or dollars), with higher seeded teams being more expensive. Number 1 seeds typically cost $25, 2 seeds $19, 3 seeds $13, and so on down to the 15th and 16th seeds which cost $1. Additionally, win is weighted the same regardless of round (e.g., winning a game in the first round is just as much of a win as winning the Champsionship game). 
 
 A winning ballot depends on the year but will generally accumulate 18-20 wins. The fundamental problem is whether to chose a few higher seeded teams, many low seeded teams, or some mixture in between, in order to maximize the probability of a winning score.
 
@@ -24,7 +24,8 @@ Maximize the probability, $p$, of achieving a winning score, $M$, from a ballot 
 subject to the constraints that:
 
 - No more than four teams of any seed can be bought: $$ \sum_{j}1_{ij} \leq 4 \space\space \forall i \in \{1, 2, ..., 16 \} $$   
-- The cost of the ballot is less than the allowable budget, typically 100: $$ \sum_{i,j}C_{i}*1_{ij} \leq 100 $$
+- The cost of the ballot is less than the allowable budget, typically $
+- 100: $$ \sum_{i,j}C_{i}*1_{ij} \leq 100 $$
 
 Where:
 - $W_{ij}$ is the number of wins achieved by team $j$ seeded $i$
